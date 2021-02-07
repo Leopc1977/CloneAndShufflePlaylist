@@ -40,6 +40,10 @@ var spotifyApi = new SpotifyWebApi({
   app.get('/', (req, res) => {
     res.redirect(spotifyApi.createAuthorizeURL(scopes));
   });
+
+  app.get('https://cloneandshuffleplaylist.herokuapp.com', (req, res) => {
+    res.redirect(spotifyApi.createAuthorizeURL(scopes));
+  });
   app.get('/login', (req, res) => {
     res.redirect(spotifyApi.createAuthorizeURL(scopes));
   });
