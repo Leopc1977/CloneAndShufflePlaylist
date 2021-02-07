@@ -1,0 +1,10 @@
+#name > input {
+    height: 1em;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+}
+div {
+    display: inline;
+}
